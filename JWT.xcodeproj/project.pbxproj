@@ -359,6 +359,9 @@
 					279D63A61AD07FFF0024E2BC = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					CD9B62131C7753D8005D4844 = {
+						LastSwiftMigration = 1010;
+					};
 				};
 			};
 			buildConfigurationList = 279D63961AD07FFF0024E2BC /* Build configuration list for PBXProject "JWT" */;
@@ -682,6 +685,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocode.$(PRODUCT_NAME:rfc1034identifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -701,6 +705,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocode.$(PRODUCT_NAME:rfc1034identifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
