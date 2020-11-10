@@ -5,13 +5,19 @@ import PackageDescription
 #if os(macOS) || os(iOS) || os(watchOS) || os(tvOS)
 let package = Package(
   name: "JWT",
-  dependencies: [
-    .package(url: "https://github.com/kylef-archive/CommonCrypto.git", majorVersion: 1),
+  products: [
+    .library(name: "JWT", targets: ["JWT"])
   ],
-  exclude: [
-    "Sources/HMACCryptoSwift.swift",
+    dependencies: [
+      .package(url: "https://github.com/kylef-archive/CommonCrypto.git", from: "1.0.0"),
+    ],
+  targets: [
+    .target(name: "JWT", path: "Sources", exclude: [
+        "Sources/HMACCryptoSwift.swift",
+    ])
   ]
 )
+
 #else
 let package = Package(
   name: "JWT",
