@@ -14,11 +14,11 @@ let package = Package(
   targets: [
     .target(
       name: "JWT",
+      dependencies: ["CommonCrypto"],
       path: "Sources",
       exclude: [
         "Sources/HMACCryptoSwift.swift",
-      ],
-      dependencies: ["CommonCrypto"]
+      ]
     )
   ]
 )
