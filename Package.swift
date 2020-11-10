@@ -9,7 +9,7 @@ let package = Package(
     .library(name: "JWT", targets: ["JWT"])
   ],
     dependencies: [
-      .package(url: "https://github.com/sp0n-7/CommonCrypto.git", requirement: .branch("spm/update"),
+      .package(url: "https://github.com/sp0n-7/CommonCrypto.git", requirement: .branch("spm/update")),
     ],
   targets: [
     .target(
