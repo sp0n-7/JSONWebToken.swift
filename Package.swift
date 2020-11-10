@@ -12,9 +12,14 @@ let package = Package(
       .package(url: "https://github.com/kylef-archive/CommonCrypto.git", from: "1.0.0"),
     ],
   targets: [
-    .target(name: "JWT", path: "Sources", exclude: [
+    .target(
+      name: "JWT",
+      path: "Sources",
+      exclude: [
         "Sources/HMACCryptoSwift.swift",
-    ])
+      ],
+      dependencies: ["CommonCrypto"]
+    )
   ]
 )
 
