@@ -1,3 +1,4 @@
+// swift-tools-version:5.3
 import PackageDescription
 
 
@@ -5,7 +6,7 @@ import PackageDescription
 let package = Package(
   name: "JWT",
   dependencies: [
-    .Package(url: "https://github.com/kylef-archive/CommonCrypto.git", majorVersion: 1),
+    .package(url: "https://github.com/kylef-archive/CommonCrypto.git", majorVersion: 1),
   ],
   exclude: [
     "Sources/HMACCryptoSwift.swift",
@@ -15,7 +16,7 @@ let package = Package(
 let package = Package(
   name: "JWT",
   dependencies: [
-    .Package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0, minor: 6),
+    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0, minor: 6),
   ],
   exclude: [
     "Sources/HMACCommonCrypto.swift",
